@@ -9,9 +9,20 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
 
+}
+.imagemfundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-vector/abstract-paper-style-background_23-2150744372.jpg?semt=ais_hybrid&w=740');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 .main {
     flex: 1;
     display: flex;
@@ -24,7 +35,7 @@ body {
 h2 {
     line-height: 1.2;
     text-align: center;
-    color: #5f18bb;
+    color: #4318bb;
     font-size: 35px;
     display: flex;
     flex-direction: column;
@@ -47,17 +58,19 @@ h2 {
 }
 
 
+
 .borda form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    padding: 10px;
+    gap: 10px;
     width: 100%;
 }
 
 
 .borda input {
     width: 100%;
-    padding: 8px;
+    padding: 6px;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
@@ -66,7 +79,7 @@ h2 {
 .borda button {
     width: 100%;
     padding: 10px;
-    background-color: #5f18bb;
+    background-color: #630cd4;
     border: none;
     border-radius: 8px;
     color: white;
@@ -76,9 +89,8 @@ h2 {
 }
 
 .borda button:hover {
-    background-color: #2f0269;
+    background-color: #9900ffd8;
 }
-
 
 .footer {
     background-color: #5f18bb;
