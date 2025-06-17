@@ -1,0 +1,131 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.imagemfundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1673526759327-54f1f5b27322?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(0.6px);
+    z-index: -1;
+}
+
+
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+
+.borda {
+    width: 100%;
+    max-width: 360px;
+    padding: 25px;
+    background-color: #fff;
+    border: 4px solid #5f18bb;
+    border-radius: 20px;
+    box-shadow: 0 0 70px hsl(293, 83%, 81%);
+}
+
+h2 {
+    font-size: 28px;
+    color: #4318bb;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label,
+.label-genero {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    height: 38px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.genero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f6f3ff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+.genero label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+}
+
+
+.genero input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #5f18bb;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #630cd4;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+button:hover {
+    background-color: #7006b6d8;
+}
+
+
+.footer {
+    background-color: #5f18bb;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
