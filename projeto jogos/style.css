@@ -1,0 +1,44 @@
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background: radial-gradient(circle at center, #0f0c29, #302b63, #24243e);
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+  cursor: url('assets/cursor/cifrao.png'), auto;
+  overflow-x: hidden;
+}
+main {
+  background: rgba(30, 27, 46, 0.95);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00ffea;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+nav button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: linear-gradient(145deg, #00f5ff, #7f00ff);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00f5ff;
+  cursor: pointer;
+}
+nav button:hover {
+  transform: scale(1.1);
+}
+
+#game-area {
+  margin-top: 20px;
+  background: rgba(50, 50, 80, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffd0;
+}
+.win { color: #7dc77d; }
+.lose { color: #d26d6d; }
+.bonus { color: #f2c74a; }
+.info { color: #ccc; }
